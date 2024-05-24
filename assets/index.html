@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linkly</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Linkly</h1>
+      <p>
+        Simplify your links with Linkly, the ultimate URL shortener
+        <span style="font-weight: bold">Linkly</span>. Effortlessly condense
+        long, unwieldy URLs into short, easy-to-share links.
+      </p>
+    </header>
+    <main>
+      <form id="urlForm">
+        <label for="url">URL</label>
+        <input
+          type="url"
+          id="url"
+          name="url"
+          placeholder="Enter url to shorten..."
+        />
+        <label
+          id="shortUrlOutputLabel"
+          style="display: none"
+          for="shortUrlOutput"
+          >Shortened URL</label
+        >
+        <input
+          name="shortUrlOutput"
+          id="shortUrlOutput"
+          readonly
+          style="display: none"
+        />
+        <button type="submit">Shorten</button>
+      </form>
+    </main>
+  </body>
+</html>
